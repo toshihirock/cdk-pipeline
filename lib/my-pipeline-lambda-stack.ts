@@ -13,9 +13,11 @@ export class MyLambdaStack extends cdk.Stack {
         code: new InlineCode('exports.handler = _ => "Hello, CDK";')
       });
 
+      /*
       const table = dynamodb.Table.fromTableArn(this, 'ImportedTable', 'arn:aws:dynamodb:ap-northeast-1:323817733012:table/cdk-test');
             // now you can just call methods on the table
       table.grantReadWriteData(lambda);
+      */
     }
 }
 
